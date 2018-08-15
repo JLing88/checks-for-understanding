@@ -8,39 +8,87 @@ Note: When you're done, submit a PR.
 
 1. List the five common HTTP verbs and what the purpose is of each verb.
 
+  GET
+  PUT
+  POST
+  DELETE
+  PATCH
+
 2. What is Sinatra?
+
+  A Ruby framework for creating web apps.
 
 3. What is MVC?
 
+  Design pattern for creating web apps.
+
+  Model
+  View
+  Controller
+
 4. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
 
+  It provides a pattern for easy data manipulation, interacting with URI paths, and to make it easier for others to read.
+
 5. What types of variables are accessible in our view templates without explicitly passing them?
+
+  Anything that's declared within that block.
 
 6. Given the following block of code, how would I pass an instance variable `count` with a value of `1` to my `index.erb` template?
 
   ```ruby
   get '/horses' do
+    @count = 1
     erb :index
   end
   ```
 
 7. In the same code block, how would I pass a local variable `name` with a value of `Mr. Ed` to the view?
 
+get '/horses' do
+  @name = 'Mr. Ed'
+  erb :index
+end
+
 8. What's the purpose of ERB?
+
+  It allows us to use Ruby statements and methods within the HTML code.
 
 9. Why do I need a development AND test database?
 
+  We can intentionally populate the test database with known values and keep the test sample small without affecting the real data. Having a smaller data set enables our tests to run much faster as well.
+
 10. What is CRUD and why is it important?
+
+  CRUD is important because it details all of the various database operations.
+
+  Create
+  Read
+  Update
+  Delete
 
 11. What does HTTP stand for?
 
+  HyperText Transport Protocol
+
 12. What are the two ways to interpolate Ruby in an ERB view template? What's the difference between these two ways?
+
+  <%= %>
+  <% %>
 
 13. What's an ORM? What does it do?
 
+  Object relational model. It allows us to store objects in a database.
+
 14. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 
+  ActiveRecord
+
 15. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
+
+  GET - '/'
+  GET - '/restaurant'  
+
 
 16. What's a migration?
 
