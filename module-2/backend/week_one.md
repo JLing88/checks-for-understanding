@@ -87,16 +87,27 @@ end
 15. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
 
   GET - '/'
-  GET - '/restaurant'  
+  GET - '/restaurant'
+  POST - '/edit'
+  PUT - '/new'
+  DELETE - ''
 
 
 16. What's a migration?
 
+  Instructions on how to create a database. Contains the structure.
+
 17. When you create a migration, does it automatically modify your database?
+
+  No, you have to tell it what to do in the migration file.
 
 18. How does a model relate to a database?
 
+  The model is the database. The model does the database the operations.
+
 19. What is the difference between `#new` and `#create`?
+
+  New creates an object, create creates an object and enters it into the database.
 
 20. Given a table named `animals`, What is the SQL query that will return all info from that table?
     `id     name        number_of_legs
@@ -106,9 +117,11 @@ end
       3     whale       0
       4     bird        2
     `
+    SELECT * FROM animals;
 
 21. Using the same table, What is the SQL query that will return only the animals that has 4 legs?
 
+  SELECT * FROME animals WHERE number_of_legs=4;
 
 ### Review Questions:  
 22. Given a CSV file (“films.csv”) with these headers [id, title, description], how would you load these into your database to create new instances of Film?  
