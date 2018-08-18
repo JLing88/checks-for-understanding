@@ -78,7 +78,7 @@ end
 
 13. What's an ORM? What does it do?
 
-  Object relational model. It allows us to store objects in a database.
+  Object relational model. It allows us to store objects in a database and interact with those objects. 
 
 14. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 
@@ -86,11 +86,13 @@ end
 
 15. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
 
-  GET - '/'
-  GET - '/restaurant'
-  POST - '/edit'
-  PUT - '/new'
-  DELETE - ''
+  GET - '/' goes to homepage
+  GET - '/restaurants/new' goes to form to create new restaurant
+  GET - '/restaurants' - shows all restaurants
+  GET - '/restaurants/:id/edit' - goes to form to edit a restaurant
+  POST - '/restaurants' - creates new restaurant
+  PUT - '/restaurants/:id - updates a restaurant
+  DELETE - '/restaurants/:id' - deletes a restaurant
 
 
 16. What's a migration?
@@ -103,7 +105,7 @@ end
 
 18. How does a model relate to a database?
 
-  The model is the database. The model does the database the operations.
+  The model represents the actions involved in interacting with the DB. A model represents the records stored in the DB.
 
 19. What is the difference between `#new` and `#create`?
 
@@ -121,7 +123,7 @@ end
 
 21. Using the same table, What is the SQL query that will return only the animals that has 4 legs?
 
-  SELECT * FROME animals WHERE number_of_legs=4;
+  SELECT * FROM animals WHERE number_of_legs=4;
 
 ### Review Questions:  
 22. Given a CSV file (“films.csv”) with these headers [id, title, description], how would you load these into your database to create new instances of Film?  
