@@ -126,6 +126,10 @@ end
 ### Review Questions:  
 22. Given a CSV file (“films.csv”) with these headers [id, title, description], how would you load these into your database to create new instances of Film?  
 
+  CSV.foreach("path/to/file.csv", headers: true, header_converters: :symbol) do |row|
+    Film.create(row)
+  end
+
 23. Given the following hash:
 ```
 activities = {
@@ -137,17 +141,19 @@ activities = {
 ```
 How would I add 'granola bar' to things you should have when hiking?
 
+  activities[:hiking][:supplies] << "granola bar"
+
 24. What are the 4 Principles of OOP? Give a one sentence explanation of each.
 
+  Inheritance - Child classes inherit all instance vars and methods of their parents
+  Encapsulation - The concept of limiting data accessibility and packaging related data together.
+  Polymorphism - The process of overriding an inherited method of child class to do something different that the parent method does.
+  Abstraction - The idea of only having to deal with objects at a high level and having to know their inner-workings. Black box analogy.
 
 ### Self Assessment:
 Choose One: (erase the others)
-* I was able to answer every question without relying on outside resources
 * I was able to answer most questions independently, but utilized outside resources for a few
-* I was able to answer a few questions independently, but relied heavily on outside resources
 
 Choose One:
-* I feel confident about the content presented this week
-* I feel comfortable with the content presented this week
+
 * I feel overwhelmed by the content presented this week
-* I feel quite lost by the content presented this week
