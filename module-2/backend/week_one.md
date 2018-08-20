@@ -73,12 +73,12 @@ end
 
 12. What are the two ways to interpolate Ruby in an ERB view template? What's the difference between these two ways?
 
-  <%= %>
-  <% %>
+  <%= %> Actually displays the return value of the Ruby statement.
+  <% %> Does not display the return value. 
 
 13. What's an ORM? What does it do?
 
-  Object relational model. It allows us to store objects in a database and interact with those objects. 
+  Object relational model. It allows us to store objects in a database and interact with those objects.
 
 14. What's the most commonly used ORM in ruby (Sinatra & Rails)?
 
