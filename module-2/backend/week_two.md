@@ -46,7 +46,7 @@ Now how would you find the owner of the team with an id of 4?
   `Team.join(:owners).where("id = 4").pluck(:name)`
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
-  `Teacher has many students. Student belongs to teacher. Not sure how to draw in a text editor...`
+  `Teacher has many students. Student belongs to teacher. Not sure how to draw in a md file.`
 
 6. Define foreign key, primary key, and schema.
   `Foreign key - an attribute which is a primary key in another table. It is how the two tables are related.`
