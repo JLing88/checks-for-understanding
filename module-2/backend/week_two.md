@@ -88,7 +88,7 @@ Now how would you find the owner of the team with an id of 4?
 
   
 6. Give an example of when you might want to store information besides ids on a join table.
-
+  `There could be attributest that describe the join table, but have no meaning or relationships to the tables they are joining.`
   
 7. Describe and diagram the relationship between patients and doctors.
   `many to many - doctors see many patients and patients could see many doctors`
