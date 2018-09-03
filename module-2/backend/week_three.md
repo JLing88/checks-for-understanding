@@ -64,6 +64,12 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
     <h3><%= @person.name%></h3>
    </section>
   `
+  
+  `within("#personal-info) do
+    expect(page).to have_content(@person.name)
+  end`
+  
+  
 15. How would you call the method `prance` from within the method `move` on a `Horse` instance?
 
   `horse.move`
