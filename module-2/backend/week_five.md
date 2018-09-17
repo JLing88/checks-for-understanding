@@ -76,6 +76,7 @@ scope :active, -> { where(active: true) }
 `polymorphism is tied into inheritance in that a class that inherits from another is able to define a method also defined in the parent class and make the method have different behavior. Duck-typing essentially looks at the object calling the method and chooses the method that will work with that data type. You could use it in ruby in classes inheriting from other classes or with AR relations`
 
 14. How would you clean the string "(630) 854-5483" to "630.854.5483"?  
+`gsub but not exactly sure of the regex...`
 
 
 ### Self Assessment:
