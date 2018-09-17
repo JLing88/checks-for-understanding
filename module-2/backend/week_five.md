@@ -47,7 +47,7 @@ Note: When you're done, submit a PR.
 User.create(name: "Happy", active: true)
 ```
 ```
-scope :red, where(active: true)
+scope :active, -> { where(active: true) }
 ```
 11. What is the difference between a scope and a class method?
  `A scope is basically shorthand for a class method.`
